@@ -1,7 +1,8 @@
 # selfsignedcertgen
 
-[![codecov]([https://codecov.io/gh/joshrivers/selfsignedcertgen/branch/main/graph/badge.svg?token=81X65EV65H](https://codecov.io/gh/joshrivers/selfsignedcertgen/branch/main/graph/badge.svg?token=81X65EV65H))]([https://codecov.io/gh/joshrivers/selfsignedcertgen](https://codecov.io/gh/joshrivers/selfsignedcertgen))
-[![GoDoc]([https://img.shields.io/badge/pkg.go.dev-doc-blue](https://img.shields.io/badge/pkg.go.dev-doc-blue))]([http://pkg.go.dev/github.com/joshrivers/selfsignedcertgen](http://pkg.go.dev/github.com/joshrivers/selfsignedcertgen))
+[![codecov](https://codecov.io/gh/joshrivers/selfsignedcertgen/branch/main/graph/badge.svg?token=81X65EV65H)](https://codecov.io/gh/joshrivers/selfsignedcertgen)
+[![GoDoc](https://img.shields.io/badge/pkg.go.dev-doc-blue)](http://pkg.go.dev/github.com/joshrivers/selfsignedcertgen)
+
 
 Generate self signed certificates for use in a Golang web server.
 
