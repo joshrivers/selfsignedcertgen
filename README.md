@@ -1,5 +1,8 @@
 # selfsignedcertgen
 
+[![codecov](https://codecov.io/gh/joshrivers/selfsignedcertgen/branch/master/graph/badge.svg)](https://codecov.io/gh/joshrivers/selfsignedcertgen)
+[![GoDoc](https://img.shields.io/badge/pkg.go.dev-doc-blue)](http://pkg.go.dev/github.com/joshrivers/selfsignedcertgen)
+
 Generate self signed certificates for use in a Golang web server.
 
 You can generate a new TLS private key and sign it with a self-signed certificate authority with a simple one-liner:
