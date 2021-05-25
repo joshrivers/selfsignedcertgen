@@ -1,7 +1,5 @@
 # selfsignedcertgen
 
-[![codecov](https://codecov.io/gh/./branch/master/graph/badge.svg)](https://codecov.io/gh/.)
-
 Generate self signed certificates for use in a Golang web server.
 
 You can generate a new TLS private key and sign it with a self-signed certificate authority with a simple one-liner:
@@ -16,7 +14,7 @@ This library will generate the equivalent key and certificate files in Go at run
 
 ## Note on security
 
-If possible, you should never use self-sigened certificates. These days it is pretty easy to use Let's Encrypt and there are a number of Go livraries that will autoprovision an TLS certificate using the Let's Encrypt api. If possible you should use one of those and not self-signed certificates. Self-signed certificates often create a number of security problems that leave you open to a lower level of security than using plain old HTTP. Avoid them if possible. Remember that you need `chrome://flags/#allow-insecure-localhost` enabled to hit insecure HTTP on localhost now.
+If possible, you should never use self-signed certificates. These days it is pretty easy to use Let's Encrypt and there are a number of Go libraries that will autoprovision an TLS certificate using the Let's Encrypt api. If possible you should use one of those and not self-signed certificates. Self-signed certificates often create a number of security problems that leave you open to a lower level of security than using plain old HTTP. Avoid them if possible. Remember that you need `chrome://flags/#allow-insecure-localhost` enabled to hit insecure HTTPS on localhost now.
 
 Example
 

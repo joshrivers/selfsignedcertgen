@@ -8,4 +8,7 @@ coverage:
 	go test -race -covermode=atomic -coverprofile=coverage.out
 
 readme:
-	goreadme -credit=false -badge-codecov > README.md
+	goreadme -credit=false > README.md
+
+godoc:
+	open http://localhost:8000/pkg/github.com/joshrivers/selfsignedcertgen/ && Tgodoc -http localhost:8000
