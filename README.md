@@ -20,7 +20,11 @@ This library will generate the equivalent key and certificate files in Go at run
 
 If possible, you should never use self-signed certificates. These days it is pretty easy to use Let's Encrypt and there are a number of Go libraries that will autoprovision an TLS certificate using the Let's Encrypt api. If possible you should use one of those and not self-signed certificates. Self-signed certificates often create a number of security problems that leave you open to a lower level of security than using plain old HTTP. Avoid them if possible. Remember that you need `chrome://flags/#allow-insecure-localhost` enabled to hit insecure HTTPS on localhost now.
 
-Example
+## Temporary Files
+
+This code uses the `TempFile` mechansism to store key files. If `/tmp` does not exist in your environment, ensure TMPDIR is set in the environment to a directory that does exist.
+
+## Example
 
 ```go
 package main
@@ -54,7 +58,7 @@ func main() {
 	keyLocations := signer.GenerateKeyAndCertificate()
 	err := http.ListenAndServeTLS("localhost:8443", keyLocations.CertPath, keyLocations.KeyPath, nil)
 	if err != nil {
-		log.Fatalf("Failed to start server with error: %!(NOVERB)v", err)
+		log.Fatalf("Failed to start server with error: %v", err)
 	}
 }
 ```
